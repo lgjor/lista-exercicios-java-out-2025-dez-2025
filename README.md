@@ -50,6 +50,7 @@ src/
 10. **X05 - Answer Cell** - `x05_answerCell`
 11. **X06 - Hello Name** - `x06_HelloName`
 12. **X07 - Ends Ly** - `X7_endsLy`
+13. **X08 - See Color** - `x08_seeColor`
 
 ## Como Executar
 
@@ -89,6 +90,7 @@ src/
 ./gradlew runAnswerCell
 ./gradlew runHelloName
 ./gradlew runEndsLy
+./gradlew runSeeColor
 ```
 
 > **Windows:** Use `.\gradlew` em vez de `./gradlew`

@@ -106,6 +106,13 @@ tasks.register("runEndsLy", JavaExec::class) {
     classpath = sourceSets["main"].runtimeClasspath
 }
 
+tasks.register("runSeeColor", JavaExec::class) {
+    group = "exercicios"
+    description = "Executa o exercício See Color"
+    mainClass.set("org.desviante.exercicios.x08_seeColor.SeeColor")
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
 // Tarefa padrão para listar todos os exercícios
 tasks.register("listExercicios") {
     group = "exercicios"
@@ -150,6 +157,9 @@ tasks.register("listExercicios") {
         
         11. X07 - Ends Ly
            gradle runEndsLy
+        
+        12. X08 - See Color
+           gradle runSeeColor
         
         ====================================
         Para executar os testes:
