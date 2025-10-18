@@ -113,8 +113,15 @@ tasks.register("runSeeColor", JavaExec::class) {
     classpath = sourceSets["main"].runtimeClasspath
 }
 
+tasks.register("runMakeTags", JavaExec::class) {
+    group = "exercicios"
+    description = "Executa o exercício Make Tags"
+    mainClass.set("org.desviante.exercicios.x09_makeTags.MakeTags")
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
 // Tarefa padrão para listar todos os exercícios
-tasks.register("listExercicios") {
+tasks.register("listarExercicios") {
     group = "exercicios"
     description = "Lista todos os exercícios disponíveis"
     doLast {
@@ -160,6 +167,9 @@ tasks.register("listExercicios") {
         
         12. X08 - See Color
            gradle runSeeColor
+        
+        13. X09 - Make Tags
+           gradle runMakeTags
         
         ====================================
         Para executar os testes:

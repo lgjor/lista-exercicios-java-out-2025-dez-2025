@@ -51,12 +51,13 @@ src/
 11. **X06 - Hello Name** - `x06_HelloName`
 12. **X07 - Ends Ly** - `X7_endsLy`
 13. **X08 - See Color** - `x08_seeColor`
+14. **X09 - Make Tags** - `x09_makeTags`
 
 ## Como Executar
 
 ### Listar todos os exercícios disponíveis:
 ```bash
-./gradlew listExercicios
+./gradlew listarExercicios
 ```
 
 ### Compilar o projeto:
@@ -70,6 +71,8 @@ src/
 ```
 
 ### Executar exercícios específicos:
+
+(Obs.: Válido apenas para exercícios que possuem método main).
 
 ```bash
 # Exercícios Básicos
@@ -85,12 +88,8 @@ src/
 
 # Exercícios X-Series
 ./gradlew runSortaSum
-./gradlew runIn1To10
-./gradlew runLessByTen
-./gradlew runAnswerCell
 ./gradlew runHelloName
 ./gradlew runEndsLy
-./gradlew runSeeColor
 ```
 
 > **Windows:** Use `.\gradlew` em vez de `./gradlew`
@@ -132,7 +131,3 @@ Cada exercício possui seu próprio subpacote para melhor organização e evitar
 - [Jett Brains Academy](https://www.jetbrains.com/pt-br/academy/)
 - [Code Workout](https://codeworkout.cs.vt.edu/)
 - [Hyperskill](https://hyperskill.org/join/aeba947b2)
-
-
-
-
