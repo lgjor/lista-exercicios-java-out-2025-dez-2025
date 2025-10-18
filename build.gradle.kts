@@ -190,6 +190,9 @@ tasks.register("listarExercicios") {
         17. X12 - Squirrel Play (somente testes)
            gradle test --tests "*squirrelPlay*"
         
+        18. X13 - Caught Speeding (somente testes)
+           gradle test --tests "*caughtSpeeding*"
+        
         ====================================
         Para executar os testes:
            gradle test
@@ -200,6 +203,7 @@ tasks.register("listarExercicios") {
            gradle test --tests "*comboString*"
            gradle test --tests "*teenSum*"
            gradle test --tests "*squirrelPlay*"
+           gradle test --tests "*caughtSpeeding*"
         ====================================
         """.trimIndent())
     }

@@ -56,6 +56,7 @@ src/
 16. **X10 - Combo String** - `x10_comboString`
 17. **X11 - Teen Sum** - `X11_teenSum`
 18. **X12 - Squirrel Play** - `X12_squirrelPlay`
+19. **X13 - Caught Speeding** - `x13_caughtSpeeding`
 
 ## Como Executar
 
@@ -116,6 +117,7 @@ Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 ```bash
 ./gradlew test --tests "*x01_sortasum*"
 ./gradlew test --tests "*HelloName*"
+./gradlew test --tests "*caughtSpeeding*"
 ```
 
 **Relatório:** `build/reports/tests/test/index.html`

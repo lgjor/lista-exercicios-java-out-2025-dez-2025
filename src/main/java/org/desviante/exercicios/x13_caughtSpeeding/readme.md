@@ -1,0 +1,3 @@
+# X13: caughtSpeeding
+
+Escreva uma função em Java que implemente a seguinte lógica: Você está dirigindo um pouco rápido demais e um policial o para. Escreva um código para calcular o resultado, codificado como um valor inteiro: 0 = sem multa, 1 = multa pequena ou 2 = multa grande. Se speedfor 60 ou menos, o resultado é 0. Se speedestiver entre 61 e 80, inclusive, o resultado é 1. Se a velocidade for 81 ou mais, o resultado é 2. A menos que seja seu aniversário — nesse dia, sua velocidade pode ser 5 vezes maior em todos os casos.
