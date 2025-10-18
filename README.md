@@ -1,6 +1,6 @@
 # Lista de Exercícios Java 2025 (Out-Dez)
 
-Projeto Gradle contendo diversos exercícios de Java organizados em pacotes.
+Projeto Gradle contendo o enunciado e a resolução de diversos exercícios em Java organizados por pacotes.
 
 ## Estrutura do Projeto
 
