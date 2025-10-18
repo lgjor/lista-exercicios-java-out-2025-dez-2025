@@ -1,6 +1,5 @@
-package org.desviante.exercicios.x010_comboString;
+package org.desviante.exercicios.x10_comboString;
 
-import org.desviante.exercicios.x10_comboString.ComboString;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

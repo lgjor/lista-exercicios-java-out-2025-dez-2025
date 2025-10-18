@@ -1,0 +1,3 @@
+# X12 squirrelPlay
+
+Escreva uma função em Java que implemente a seguinte lógica: Os esquilos em Palo Alto passam a maior parte do dia brincando. Em particular, eles brincam se a temperatura estiver entre 15 e 32 graus Celsius (inclusive). A menos que seja verão, o limite superior é 10 em vez de 32 graus Celsius. Dado um int temperaturee um booleano isSummer, retorne true se os esquilos brincarem e false caso contrário.

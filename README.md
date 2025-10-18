@@ -54,6 +54,8 @@ src/
 14. **X08 - See Color** - `x08_seeColor`
 15. **X09 - Make Tags** - `x09_makeTags`
 16. **X10 - Combo String** - `x10_comboString`
+17. **X11 - Teen Sum** - `X11_teenSum`
+18. **X12 - Squirrel Play** - `X12_squirrelPlay`
 
 ## Como Executar
 

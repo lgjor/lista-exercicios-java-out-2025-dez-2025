@@ -184,6 +184,12 @@ tasks.register("listarExercicios") {
         15. X10 - Combo String (somente testes)
            gradle test --tests "*comboString*"
         
+        16. X11 - Teen Sum (somente testes)
+           gradle test --tests "*teenSum*"
+        
+        17. X12 - Squirrel Play (somente testes)
+           gradle test --tests "*squirrelPlay*"
+        
         ====================================
         Para executar os testes:
            gradle test
@@ -192,6 +198,8 @@ tasks.register("listarExercicios") {
            gradle test --tests "*x01_sortasum*"
            gradle test --tests "*x06_HelloName*"
            gradle test --tests "*comboString*"
+           gradle test --tests "*teenSum*"
+           gradle test --tests "*squirrelPlay*"
         ====================================
         """.trimIndent())
     }
