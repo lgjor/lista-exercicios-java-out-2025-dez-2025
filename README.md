@@ -47,11 +47,12 @@ src/
 7. **X01 - Sorta Sum** - `x01_sortasum`
 8. **X02 - In1To10** - `x02_in1To10`
 9. **X03 - Less By Ten** - `x03_lessbyten`
-10. **X05 - Answer Cell** - `x05_answerCell`
-11. **X06 - Hello Name** - `x06_HelloName`
-12. **X07 - Ends Ly** - `X7_endsLy`
-13. **X08 - See Color** - `x08_seeColor`
-14. **X09 - Make Tags** - `x09_makeTags`
+10. **X04 - Tea Party** - `x04_teaParty`
+11. **X05 - Answer Cell** - `x05_answerCell`
+12. **X06 - Hello Name** - `x06_HelloName`
+13. **X07 - Ends Ly** - `X7_endsLy`
+14. **X08 - See Color** - `x08_seeColor`
+15. **X09 - Make Tags** - `x09_makeTags`
 
 ## Como Executar
 

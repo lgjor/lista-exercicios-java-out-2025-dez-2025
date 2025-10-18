@@ -1,0 +1,3 @@
+# X4: teaParty
+
+Escreva uma função em Java que implemente a seguinte lógica: Estamos dando uma festa com quantidades de chá e doces. Retorne o resultado inteiro da festa codificado como 0 = ruim, 1 = bom ou 2 = ótimo. Uma festa é considerada boa (1) se tanto o chá quanto os doces custarem pelo menos 5. No entanto, se o chá ou o doce custarem pelo menos o dobro da quantidade do outro, a festa é ótima (2). No entanto, em todos os casos, se o chá ou o doce custarem menos que 5, a festa é sempre ruim (0).

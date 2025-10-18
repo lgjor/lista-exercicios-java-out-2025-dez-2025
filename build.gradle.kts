@@ -54,6 +54,13 @@ tasks.register("runLessByTen", JavaExec::class) {
     standardInput = System.`in`
 }
 
+tasks.register("runTeaParty", JavaExec::class) {
+    group = "exercicios"
+    description = "Executa o exercício Tea Party"
+    mainClass.set("org.desviante.exercicios.x04_teaParty.TeaParty")
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
 tasks.register("runSortaSum", JavaExec::class) {
     group = "exercicios"
     description = "Executa o exercício Sorta Sum"
@@ -156,19 +163,22 @@ tasks.register("listarExercicios") {
         8. X03 - Less By Ten
            gradle runLessByTen
         
-        9. X05 - Answer Cell
+        9. X04 - Tea Party
+           gradle runTeaParty
+        
+        10. X05 - Answer Cell
            gradle runAnswerCell
         
-        10. X06 - Hello Name
+        11. X06 - Hello Name
            gradle runHelloName
         
-        11. X07 - Ends Ly
+        12. X07 - Ends Ly
            gradle runEndsLy
         
-        12. X08 - See Color
+        13. X08 - See Color
            gradle runSeeColor
         
-        13. X09 - Make Tags
+        14. X09 - Make Tags
            gradle runMakeTags
         
         ====================================
