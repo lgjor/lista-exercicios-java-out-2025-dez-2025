@@ -15,9 +15,6 @@ src/
 │               └── exercicios/
 │                   ├── anobissexto/
 │                   ├── numbergenerators/
-│                   ├── publication/
-│                   ├── x01_sortasum/
-│                   ├── x02_in1To10/
 │                   ├── etc..
 └── test/
     └── java/
@@ -26,7 +23,6 @@ src/
                 └── exercicios/
                     ├── RecursionProgrammingExerciseLargest/
                     ├── x01_sortasum/
-                    ├── x02_in1To10/
                     └── etc..
 
 ```
