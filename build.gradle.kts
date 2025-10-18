@@ -181,6 +181,9 @@ tasks.register("listarExercicios") {
         14. X09 - Make Tags
            gradle runMakeTags
         
+        15. X10 - Combo String (somente testes)
+           gradle test --tests "*comboString*"
+        
         ====================================
         Para executar os testes:
            gradle test
@@ -188,6 +191,7 @@ tasks.register("listarExercicios") {
         Para testar um exercício específico:
            gradle test --tests "*x01_sortasum*"
            gradle test --tests "*x06_HelloName*"
+           gradle test --tests "*comboString*"
         ====================================
         """.trimIndent())
     }

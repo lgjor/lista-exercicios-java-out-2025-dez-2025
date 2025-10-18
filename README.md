@@ -53,6 +53,7 @@ src/
 13. **X07 - Ends Ly** - `X7_endsLy`
 14. **X08 - See Color** - `x08_seeColor`
 15. **X09 - Make Tags** - `x09_makeTags`
+16. **X10 - Combo String** - `x10_comboString`
 
 ## Como Executar
 
