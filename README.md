@@ -123,5 +123,14 @@ Cada exercício possui seu próprio subpacote para melhor organização e evitar
 
 ---
 
-📚 Projeto educacional com exercícios de diversas fontes.
+## Referências:
+
+### 📚 Projeto educacional com exercícios de diversas fontes.
+
+- [Jett Brains Academy](https://www.jetbrains.com/pt-br/academy/)
+- [Code Workout](https://codeworkout.cs.vt.edu/)
+- [Hyperskill](https://hyperskill.org/join/aeba947b2)
+
+
+
 
