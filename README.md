@@ -18,11 +18,7 @@ src/
 │                   ├── publication/
 │                   ├── x01_sortasum/
 │                   ├── x02_in1To10/
-│                   ├── x03_lessbyten/
-│                   ├── RecursionProgrammingExerciseLargest/
-│                   └── programmazione/
-│                       ├── dice/
-│                       └── student/
+│                   ├── etc..
 └── test/
     └── java/
         └── org/
@@ -31,64 +27,33 @@ src/
                     ├── RecursionProgrammingExerciseLargest/
                     ├── x01_sortasum/
                     ├── x02_in1To10/
-                    └── x03_lessbyten/
+                    └── etc..
+
 ```
 
-## Exercícios Organizados
+## Lista de Exercícios
 
-### 1. Ano Bissexto (`org.desviante.exercicios.anobissexto`)
-Verifica se um ano é bissexto ou não.
+> Cada exercício possui seu próprio README com detalhes de implementação.
 
-**Arquivo principal:** `AnoBissexto.java`
+### Exercícios Básicos
+1. **Ano Bissexto** - `anobissexto`
+2. **Number Generators** - `numbergenerators` (Hierarquia de classes)
+3. **Publication** - `publication` (Hierarquia de publicações)
 
-### 2. Number Generators (`org.desviante.exercicios.numbergenerators`)
-Hierarquia de classes que geram números com diferentes regras.
+### Exercícios de Recursão
+4. **Largest (Recursão)** - `RecursionProgrammingExerciseLargest`
 
-**Arquivos:**
-- `BaseNumberGenerator.java` - Classe base
-- `NumberGenerator.java` - Gerador padrão
-- `MagicNumberGenerator.java` - Gerador mágico
-- `Main.java` - Classe de teste
+### Exercícios Programmazione OOP
+5. **Dice** - `programmazione.dice` (Jogo de dados com apostas)
+6. **Student** - `programmazione.student` (Sistema de estudantes e exames)
 
-### 3. Publication (`org.desviante.exercicios.publication`)
-Hierarquia de publicações (artigos, anúncios, jornais).
-
-**Arquivos:**
-- `Publication.java` - Classe base
-- `Article.java` - Artigo
-- `Announcement.java` - Anúncio
-- `Newspaper.java` - Jornal
-- `Main.java` - Classe de teste
-
-### 4. Less By Ten (`org.desviante.exercicios.x03_lessbyten`)
-Verifica se a diferença entre quaisquer dois dos três números é >= 10.
-
-**Arquivos:**
-- `LessByTen.java` - Classe principal
-- `LessByTenTest.java` - Testes unitários (JUnit 5)
-
-### 5. Sorta Sum (`org.desviante.exercicios.x01_sortasum`)
-Soma dois números, mas retorna 20 se a soma estiver entre 10 e 19.
-
-**Arquivos:**
-- `SortaSum.java` - Classe principal
-- `SortaSumTest.java` - Testes unitários (JUnit 5)
-
-### 6. Programmazione OOP - Exercícios do Curso
-
-#### 6.1 Dice (`org.desviante.exercicios.programmazione.dice`)
-Jogo de dados com apostas usando contas bancárias.
-
-**Arquivos:**
-- `BankAccount.java` - Conta bancária
-- `Dice.java` - Jogo principal
-
-#### 6.2 Student (`org.desviante.exercicios.programmazione.student`)
-Sistema de estudantes com exames e notas.
-
-**Arquivos:**
-- `Student.java` - Estudante (implementa Comparable)
-- `Exam.java` - Exame
+### Exercícios Numerados (X-Series)
+7. **X01 - Sorta Sum** - `x01_sortasum`
+8. **X02 - In1To10** - `x02_in1To10`
+9. **X03 - Less By Ten** - `x03_lessbyten`
+10. **X05 - Answer Cell** - `x05_answerCell`
+11. **X06 - Hello Name** - `x06_HelloName`
+12. **X07 - Ends Ly** - `X7_endsLy`
 
 ## Como Executar
 
@@ -109,30 +74,28 @@ Sistema de estudantes com exames e notas.
 
 ### Executar exercícios específicos:
 
-#### Windows:
-```powershell
-.\gradlew runAnoBissexto
-.\gradlew runNumberGenerators
-.\gradlew runPublication
-.\gradlew runLessByTen
-.\gradlew runSortaSum
-.\gradlew runDice
-```
-
-#### Linux/Mac:
 ```bash
+# Exercícios Básicos
 ./gradlew runAnoBissexto
 ./gradlew runNumberGenerators
 ./gradlew runPublication
-./gradlew runLessByTen
-./gradlew runSortaSum
+
+# Recursão
+./gradlew runLargest
+
+# Programmazione OOP
 ./gradlew runDice
+
+# Exercícios X-Series
+./gradlew runSortaSum
+./gradlew runIn1To10
+./gradlew runLessByTen
+./gradlew runAnswerCell
+./gradlew runHelloName
+./gradlew runEndsLy
 ```
 
-### Executar usando Java diretamente (após compilar):
-```bash
-java -cp build/classes/java/main org.desviante.exercicios.anobissexto.AnoBissexto
-```
+> **Windows:** Use `.\gradlew` em vez de `./gradlew`
 
 ## Requisitos
 
@@ -141,27 +104,28 @@ java -cp build/classes/java/main org.desviante.exercicios.anobissexto.AnoBissext
 
 ## Testes
 
-Os testes estão localizados em `src/test/java` e utilizam JUnit 5. Para executar os testes:
+Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 
+**Executar todos os testes:**
 ```bash
 ./gradlew test
 ```
 
-Os resultados dos testes estarão disponíveis em `build/reports/tests/test/index.html`.
+**Executar teste específico:**
+```bash
+./gradlew test --tests "*x01_sortasum*"
+./gradlew test --tests "*HelloName*"
+```
+
+**Relatório:** `build/reports/tests/test/index.html`
 
 ## Estrutura de Pacotes
 
-Todos os exercícios seguem a convenção de pacotes Java:
-- **Pacote base:** `org.desviante.exercicios`
-- **Subpacotes:** Cada exercício tem seu próprio subpacote
+**Pacote base:** `org.desviante.exercicios`
 
-Isso facilita:
-- Organização do código
-- Evitar conflitos de nomes
-- Importação de classes entre exercícios
-- Manutenção do projeto
+Cada exercício possui seu próprio subpacote para melhor organização e evitar conflitos de nomes.
 
-## Licença
+---
 
-Este projeto contém exercícios educacionais de diversas fontes.
+📚 Projeto educacional com exercícios de diversas fontes.
 
