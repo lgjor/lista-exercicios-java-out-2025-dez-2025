@@ -1,0 +1,1 @@
+rootProject.name = "ListaExerciciosJava2025OutDez"
