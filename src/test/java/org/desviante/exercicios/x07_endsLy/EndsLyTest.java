@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.desviante.exercicios.X7_endsLy.EndsLy;
+import org.desviante.exercicios.X07_endsLy.EndsLy;
 
 /**
  * Testes para a classe EndsLy

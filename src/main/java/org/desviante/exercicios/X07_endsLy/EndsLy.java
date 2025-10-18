@@ -1,4 +1,4 @@
-package org.desviante.exercicios.X7_endsLy;
+package org.desviante.exercicios.X07_endsLy;
 
 public class EndsLy {
 
