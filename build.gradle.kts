@@ -193,6 +193,9 @@ tasks.register("listarExercicios") {
         18. X13 - Caught Speeding (somente testes)
            gradle test --tests "*caughtSpeeding*"
         
+        19. X14 - Near Ten (somente testes)
+           gradle test --tests "*nearTen*"
+        
         ====================================
         Para executar os testes:
            gradle test
@@ -204,6 +207,7 @@ tasks.register("listarExercicios") {
            gradle test --tests "*teenSum*"
            gradle test --tests "*squirrelPlay*"
            gradle test --tests "*caughtSpeeding*"
+           gradle test --tests "*nearTen*"
         ====================================
         """.trimIndent())
     }

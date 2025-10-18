@@ -57,6 +57,7 @@ src/
 17. **X11 - Teen Sum** - `X11_teenSum`
 18. **X12 - Squirrel Play** - `X12_squirrelPlay`
 19. **X13 - Caught Speeding** - `x13_caughtSpeeding`
+20. **X14 - Near Ten** - `x14_nearTen`
 
 ## Como Executar
 
@@ -118,6 +119,7 @@ Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 ./gradlew test --tests "*x01_sortasum*"
 ./gradlew test --tests "*HelloName*"
 ./gradlew test --tests "*caughtSpeeding*"
+./gradlew test --tests "*nearTen*"
 ```
 
 **Relatório:** `build/reports/tests/test/index.html`
