@@ -58,6 +58,8 @@ src/
 18. **X12 - Squirrel Play** - `X12_squirrelPlay`
 19. **X13 - Caught Speeding** - `x13_caughtSpeeding`
 20. **X14 - Near Ten** - `x14_nearTen`
+21. **X15 - In Order** - `X15_inOrder`
+22. **X16 - Two As One** - `X16_twoAsOne`
 
 ## Como Executar
 
@@ -120,6 +122,8 @@ Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 ./gradlew test --tests "*HelloName*"
 ./gradlew test --tests "*caughtSpeeding*"
 ./gradlew test --tests "*nearTen*"
+./gradlew test --tests "*inOrder*"
+./gradlew test --tests "*twoAsOne*"
 ```
 
 **Relatório:** `build/reports/tests/test/index.html`

@@ -196,6 +196,12 @@ tasks.register("listarExercicios") {
         19. X14 - Near Ten (somente testes)
            gradle test --tests "*nearTen*"
         
+        20. X15 - In Order (somente testes)
+           gradle test --tests "*inOrder*"
+        
+        21. X16 - Two As One (somente testes)
+           gradle test --tests "*twoAsOne*"
+        
         ====================================
         Para executar os testes:
            gradle test
@@ -208,6 +214,8 @@ tasks.register("listarExercicios") {
            gradle test --tests "*squirrelPlay*"
            gradle test --tests "*caughtSpeeding*"
            gradle test --tests "*nearTen*"
+           gradle test --tests "*inOrder*"
+           gradle test --tests "*twoAsOne*"
         ====================================
         """.trimIndent())
     }
