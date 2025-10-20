@@ -60,6 +60,15 @@ src/
 20. **X14 - Near Ten** - `x14_nearTen`
 21. **X15 - In Order** - `X15_inOrder`
 22. **X16 - Two As One** - `X16_twoAsOne`
+23. **X17 - Red Ticket** - `X17_redTicket`
+24. **X18 - Blue Ticket** - `x18_blueTicket`
+25. **X19 - Make Bricks** - `x19_makeBricks`
+26. **X20 - Lone Sum** - `x20_loneSum`
+27. **X21 - Lucky Sum** - `x21_luckySum`
+28. **X22 - No Teen Sum** - `x22_noTeenSum`
+29. **X23 - Close Far** - `x23_closeFar`
+30. **X24 - Blackjack** - `x24_blackjack`
+31. **X25 - Evenly Spaced** - `x25_evenlySpaced`
 
 ## Como Executar
 
@@ -124,6 +133,15 @@ Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 ./gradlew test --tests "*nearTen*"
 ./gradlew test --tests "*inOrder*"
 ./gradlew test --tests "*twoAsOne*"
+./gradlew test --tests "*redTicket*"
+./gradlew test --tests "*blueTicket*"
+./gradlew test --tests "*makeBricks*"
+./gradlew test --tests "*loneSum*"
+./gradlew test --tests "*luckySum*"
+./gradlew test --tests "*noTeenSum*"
+./gradlew test --tests "*closeFar*"
+./gradlew test --tests "*blackjack*"
+./gradlew test --tests "*evenlySpaced*"
 ```
 
 **Relatório:** `build/reports/tests/test/index.html`
