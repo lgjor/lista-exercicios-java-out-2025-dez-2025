@@ -1,0 +1,3 @@
+# X17: redTicket
+
+Escreva uma função em Java que implemente a seguinte lógica: Você tem um bilhete de loteria vermelho mostrando ints `a`, `b`, e `c`, cada um dos quais é 0, 1 ou 2. Se todos eles tiverem o valor 2, o resultado será 10. Caso contrário, se todos forem iguais, o resultado será 5. Caso contrário, desde que ambos `b` e `c` sejam diferentes de `a`, o resultado será 1. Caso contrário, o resultado será 0.
