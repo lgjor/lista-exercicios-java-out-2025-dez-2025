@@ -1,0 +1,3 @@
+# X18: blueTicket
+
+Escreva uma função em Java que implemente a seguinte lógica: Você tem um bilhete de loteria azul, com ints `a`, `b` e `c`. Isso resulta em três pares, que chamaremos de `ab`, `bc` e `ac`. Considere a soma dos números em cada par. Se qualquer par somar exatamente 10, o resultado será 10. Caso contrário, se a soma de `ab` for exatamente 10 a mais que a soma de `bc` ou `ac`, o resultado será 5. Caso contrário, o resultado será 0.
