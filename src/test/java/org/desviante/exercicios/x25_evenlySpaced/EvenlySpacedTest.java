@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EvenlySpacedTest {
 
 	@Test
-	@DisplayName("deve compilar")
+	@DisplayName("Deve compilar")
 	void compila() {
 		assertTrue(true);
 	}
