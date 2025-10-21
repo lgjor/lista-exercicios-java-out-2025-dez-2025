@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Testes para a classe PlusOut")
 public class PlusOutTest {
 
     private PlusOut plusOut;
