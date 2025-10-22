@@ -1,4 +1,4 @@
-package org.desviante.exercicios.FrightNightCodingChallengeHyperskill.FNCC_01_TheWrongReTurn;
+package org.desviante.exercicios.HyperSkill.FrightNightCoding.FNCC_01_TheWrongReTurn;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,5 +1,6 @@
-package org.desviante.exercicios.FrightNightCodingChallengeHyperskill.FNCC_01_TheWrongReTurn;
+package org.desviante.exercicios.HyperSkill.FrightNightCodingChallenge.FNCC_01_TheWrongReTurn;
 
+import org.desviante.exercicios.HyperSkill.FrightNightCoding.FNCC_01_TheWrongReTurn.TheWrongReTurn;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.BeforeEach;

@@ -32,43 +32,59 @@ src/
 > Cada exercício possui seu próprio README com detalhes de implementação.
 
 ### Exercícios Básicos
-1. **Ano Bissexto** - `anobissexto`
-2. **Number Generators** - `numbergenerators` (Hierarquia de classes)
-3. **Publication** - `publication` (Hierarquia de publicações)
+- **Ano Bissexto** - `anobissexto`
+- **Number Generators** - `numbergenerators` (Hierarquia de classes)
+- **Publication** - `publication` (Hierarquia de publicações)
 
 ### Exercícios de Recursão
-4. **Largest (Recursão)** - `RecursionProgrammingExerciseLargest`
+- **Largest (Recursão)** - `RecursionProgrammingExerciseLargest`
 
 ### Exercícios Programmazione OOP
-5. **Dice** - `programmazione.dice` (Jogo de dados com apostas)
-6. **Student** - `programmazione.student` (Sistema de estudantes e exames)
+- **Dice** - `programmazione.dice` (Jogo de dados com apostas)
+- **Student** - `programmazione.student` (Sistema de estudantes e exames)
 
-### Exercícios Numerados (X-Series)
-7. **X01 - Sorta Sum** - `x01_sortasum`
-8. **X02 - In1To10** - `x02_in1To10`
-9. **X03 - Less By Ten** - `x03_lessbyten`
-10. **X04 - Tea Party** - `x04_teaParty`
-11. **X05 - Answer Cell** - `x05_answerCell`
-12. **X06 - Hello Name** - `x06_HelloName`
-13. **X07 - Ends Ly** - `X7_endsLy`
-14. **X08 - See Color** - `x08_seeColor`
-15. **X09 - Make Tags** - `x09_makeTags`
-16. **X10 - Combo String** - `x10_comboString`
-17. **X11 - Teen Sum** - `X11_teenSum`
-18. **X12 - Squirrel Play** - `X12_squirrelPlay`
-19. **X13 - Caught Speeding** - `x13_caughtSpeeding`
-20. **X14 - Near Ten** - `x14_nearTen`
-21. **X15 - In Order** - `X15_inOrder`
-22. **X16 - Two As One** - `X16_twoAsOne`
-23. **X17 - Red Ticket** - `X17_redTicket`
-24. **X18 - Blue Ticket** - `x18_blueTicket`
-25. **X19 - Make Bricks** - `x19_makeBricks`
-26. **X20 - Lone Sum** - `x20_loneSum`
-27. **X21 - Lucky Sum** - `x21_luckySum`
-28. **X22 - No Teen Sum** - `x22_noTeenSum`
-29. **X23 - Close Far** - `x23_closeFar`
-30. **X24 - Blackjack** - `x24_blackjack`
-31. **X25 - Evenly Spaced** - `x25_evenlySpaced`
+### Hyperskill
+- **Exception Handling** - Tratando exceções
+- **Fright Night Coding Challenges**
+
+### Code Workout
+1. **X01 - Sorta Sum** - `x01_sortasum`
+2. **X02 - In1To10** - `x02_in1To10`
+3. **X03 - Less By Ten** - `x03_lessbyten`
+4. **X04 - Tea Party** - `x04_teaParty`
+5. **X05 - Answer Cell** - `x05_answerCell`
+6. **X06 - Hello Name** - `x06_HelloName`
+7. **X07 - Ends Ly** - `X7_endsLy`
+8. **X08 - See Color** - `x08_seeColor`
+9. **X09 - Make Tags** - `x09_makeTags`
+10. **X10 - Combo String** - `x10_comboString`
+11. **X11 - Teen Sum** - `X11_teenSum`
+12. **X12 - Squirrel Play** - `X12_squirrelPlay`
+13. **X13 - Caught Speeding** - `x13_caughtSpeeding`
+14. **X14 - Near Ten** - `x14_nearTen`
+15. **X15 - In Order** - `X15_inOrder`
+16. **X16 - Two As One** - `X16_twoAsOne`
+17. **X17 - Red Ticket** - `X17_redTicket`
+18. **X18 - Blue Ticket** - `x18_blueTicket`
+19. **X19 - Make Bricks** - `x19_makeBricks`
+20. **X20 - Lone Sum** - `x20_loneSum`
+21. **X21 - Lucky Sum** - `x21_luckySum`
+22. **X22 - No Teen Sum** - `x22_noTeenSum`
+23. **X23 - Close Far** - `x23_closeFar`
+24. **X24 - Blackjack** - `x24_blackjack`
+25. **X25 - Evenly Spaced** - `x25_evenlySpaced`
+26. **X26 - At First** - `x26_atFirst`
+28. **X28 - The End** - `x28_theEnd`
+29. **X29 - Factorial** - `x29_factorial`
+30. **X30 - Repeat End** - `x30_repeatEnd`
+31. **X31 - Plus Out** - `x31_plusOut`
+32. **X32 - Mix String** - `x32_mixString`
+33. **X33 - Zip Zap** - `x33_zipZap`
+34. **X34 - Word Ends** - `x34_wordEnds`
+35. **X35 - Count Code** - `x35_countCode`
+36. **X36 - End Other** - `x36_endOther`
+37. **X37 - Xyz There** - `x37_xyzThere`
+38. **X38 - Xy Balance** - `x38_xyBalance`
 
 ## Como Executar
 
@@ -125,23 +141,11 @@ Os testes utilizam **JUnit 5** e estão em `src/test/java`.
 ./gradlew test
 ```
 
-**Executar teste específico:**
+**Exemplos de como executar um teste específico:**
 ```bash
 ./gradlew test --tests "*x01_sortasum*"
 ./gradlew test --tests "*HelloName*"
 ./gradlew test --tests "*caughtSpeeding*"
-./gradlew test --tests "*nearTen*"
-./gradlew test --tests "*inOrder*"
-./gradlew test --tests "*twoAsOne*"
-./gradlew test --tests "*redTicket*"
-./gradlew test --tests "*blueTicket*"
-./gradlew test --tests "*makeBricks*"
-./gradlew test --tests "*loneSum*"
-./gradlew test --tests "*luckySum*"
-./gradlew test --tests "*noTeenSum*"
-./gradlew test --tests "*closeFar*"
-./gradlew test --tests "*blackjack*"
-./gradlew test --tests "*evenlySpaced*"
 ```
 
 **Relatório:** `build/reports/tests/test/index.html`
