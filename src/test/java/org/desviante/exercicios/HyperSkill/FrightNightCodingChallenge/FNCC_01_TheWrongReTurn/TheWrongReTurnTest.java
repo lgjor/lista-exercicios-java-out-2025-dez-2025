@@ -22,7 +22,7 @@ public class TheWrongReTurnTest {
     public void setUp() throws IOException {
         // Carrega os dados de teste do arquivo
         testData = TheWrongReTurn.readFile(
-            "src/main/java/org/desviante/exercicios/FrightNightCodingChallengeHyperskill/FNCC_01_TheWrongReTurn/hyperskill-dataset-117262104.txt"
+            "src/main/java/org/desviante/exercicios/HyperSkill/FrightNightCoding/FNCC_01_TheWrongReTurn/hyperskill-dataset-117262104.txt"
         );
     }
 
@@ -38,7 +38,7 @@ public class TheWrongReTurnTest {
         // Verifica se tem pelo menos 4 elementos
         assertTrue(resultado.size() >= 4, "A lista deve ter pelo menos 4 elementos");
         
-        // Verifica os 4 primeiros dígitos na ordem esperada
+        // Verifica os 4 primeiros dígitos na ordem esperada (resultado atual: 5172)
         assertEquals('5', resultado.get(0).getKey(), "O primeiro dígito deve ser '5'");
         assertEquals('1', resultado.get(1).getKey(), "O segundo dígito deve ser '1'");
         assertEquals('7', resultado.get(2).getKey(), "O terceiro dígito deve ser '7'");

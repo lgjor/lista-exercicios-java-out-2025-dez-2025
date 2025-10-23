@@ -106,9 +106,9 @@ public class TheWrongReTurn {
 
     public static void main(String[] args) throws IOException {
         // Considerando que o arquivo está no mesmo pacote do main
-        //final String filePath01 = "src/main/java/org/desviante/exercicios/FrightNightCodingChallengeHyperskill/FNCC_01_TheWrongReTurn/hyperskill-dataset-117262104.txt";
-        final String filePath02 = "src/main/java/org/desviante/exercicios/FrightNightCodingChallengeHyperskill/FNCC_01_TheWrongReTurn/hyperskill-dataset-117266224.txt";
-        final String filePath = filePath02;
+        final String filePath01 = "src/main/java/org/desviante/exercicios/HyperSkill/FrightNightCoding/FNCC_01_TheWrongReTurn/hyperskill-dataset-117262104.txt";
+        //final String filePath02 = "src/main/java/org/desviante/exercicios/FrightNightCodingChallengeHyperskill/FNCC_01_TheWrongReTurn/hyperskill-dataset-117266224.txt";
+        final String filePath = filePath01;
         String input = null;
         // Lê o conteúdo do arquivo
         try {

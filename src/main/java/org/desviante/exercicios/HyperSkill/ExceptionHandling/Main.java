@@ -41,7 +41,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        array = scanner.nextLine();
+        try{            
+            array = scanner.nextLine();
+        } catch (NoSuchElementException e) {
+            System.out.println("No input provided");
+        }
+        finally {
+            scanner.close();
+        }
         try {
             methodCatchingSomeExceptions();
         } catch (Exception e) {
