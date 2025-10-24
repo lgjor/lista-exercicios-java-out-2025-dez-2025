@@ -48,43 +48,46 @@ src/
 - **Fright Night Coding Challenges**
 
 ### Code Workout
-1. **X01 - Sorta Sum** - `x01_sortasum`
-2. **X02 - In1To10** - `x02_in1To10`
-3. **X03 - Less By Ten** - `x03_lessbyten`
-4. **X04 - Tea Party** - `x04_teaParty`
-5. **X05 - Answer Cell** - `x05_answerCell`
-6. **X06 - Hello Name** - `x06_HelloName`
-7. **X07 - Ends Ly** - `X7_endsLy`
-8. **X08 - See Color** - `x08_seeColor`
-9. **X09 - Make Tags** - `x09_makeTags`
-10. **X10 - Combo String** - `x10_comboString`
-11. **X11 - Teen Sum** - `X11_teenSum`
-12. **X12 - Squirrel Play** - `X12_squirrelPlay`
-13. **X13 - Caught Speeding** - `x13_caughtSpeeding`
-14. **X14 - Near Ten** - `x14_nearTen`
-15. **X15 - In Order** - `X15_inOrder`
-16. **X16 - Two As One** - `X16_twoAsOne`
-17. **X17 - Red Ticket** - `X17_redTicket`
-18. **X18 - Blue Ticket** - `x18_blueTicket`
-19. **X19 - Make Bricks** - `x19_makeBricks`
-20. **X20 - Lone Sum** - `x20_loneSum`
-21. **X21 - Lucky Sum** - `x21_luckySum`
-22. **X22 - No Teen Sum** - `x22_noTeenSum`
-23. **X23 - Close Far** - `x23_closeFar`
-24. **X24 - Blackjack** - `x24_blackjack`
-25. **X25 - Evenly Spaced** - `x25_evenlySpaced`
-26. **X26 - At First** - `x26_atFirst`
-28. **X28 - The End** - `x28_theEnd`
-29. **X29 - Factorial** - `x29_factorial`
-30. **X30 - Repeat End** - `x30_repeatEnd`
-31. **X31 - Plus Out** - `x31_plusOut`
-32. **X32 - Mix String** - `x32_mixString`
-33. **X33 - Zip Zap** - `x33_zipZap`
-34. **X34 - Word Ends** - `x34_wordEnds`
-35. **X35 - Count Code** - `x35_countCode`
-36. **X36 - End Other** - `x36_endOther`
-37. **X37 - Xyz There** - `x37_xyzThere`
-38. **X38 - Xy Balance** - `x38_xyBalance`
+1. **X01 - Sorta Sum**
+2. **X02 - In1To10**
+3. **X03 - Less By Ten**
+4. **X04 - Tea Party**
+5. **X05 - Answer Cell**
+6. **X06 - Hello Name**
+7. **X07 - Ends Ly**
+8. **X08 - See Color**
+9. **X09 - Make Tags**
+10. **X10 - Combo String**
+11. **X11 - Teen Sum**
+12. **X12 - Squirrel Play**
+13. **X13 - Caught Speeding**
+14. **X14 - Near Ten**
+15. **X15 - In Order**
+16. **X16 - Two As One**
+17. **X17 - Red Ticket**
+18. **X18 - Blue Ticket**
+19. **X19 - Make Bricks**
+20. **X20 - Lone Sum**
+21. **X21 - Lucky Sum**
+22. **X22 - No Teen Sum**
+23. **X23 - Close Far**
+24. **X24 - Blackjack**
+25. **X25 - Evenly Spaced**
+26. **X26 - At First**
+28. **X28 - The End**
+29. **X29 - Factorial**
+30. **X30 - Repeat End**
+31. **X31 - Plus Out**
+32. **X32 - Mix String**
+33. **X33 - Zip Zap**
+34. **X34 - Word Ends**
+35. **X35 - Count Code**
+36. **X36 - End Other**
+37. **X37 - Xyz There**
+38. **X38 - Xy Balance**
+39. **x39 - Get Sandwich**
+40. **x40 - Sum 3 integers in Array**
+41. **x41 - Plus Two**
 
 ## Como Executar
 
