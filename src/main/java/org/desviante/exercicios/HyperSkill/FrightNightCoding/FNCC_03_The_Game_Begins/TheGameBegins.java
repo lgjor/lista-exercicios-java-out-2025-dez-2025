@@ -3,9 +3,7 @@ package org.desviante.exercicios.HyperSkill.FrightNightCoding.FNCC_03_The_Game_B
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 public class TheGameBegins {

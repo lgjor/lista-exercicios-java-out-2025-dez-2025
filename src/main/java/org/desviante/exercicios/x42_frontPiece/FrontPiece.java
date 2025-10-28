@@ -6,8 +6,14 @@ public class FrontPiece {
 
     public int[] frontPiece(int[] nums)
     {
+        // Se o array de entrada for 'null', retorne 'null' (mantendo o comportamento atual para null)
         if (nums == null){
             return null;
+        }
+
+        // Fix para o erro de retorno null para array de tamanho zero
+        if (nums.length == 0){
+            return new int[0];
         }
         int[] frontPieceNums = new int[nums.length>=2?2:1];
         for (int i=0; i<frontPieceNums.length; i++){
