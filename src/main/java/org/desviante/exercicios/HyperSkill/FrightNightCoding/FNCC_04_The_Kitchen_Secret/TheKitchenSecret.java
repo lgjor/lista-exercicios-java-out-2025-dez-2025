@@ -3,7 +3,6 @@ package org.desviante.exercicios.HyperSkill.FrightNightCoding.FNCC_04_The_Kitche
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -164,17 +163,11 @@ public class TheKitchenSecret {
 
         // Inicializa result como string vazia
         kitchenSecret.result = "";
-        
-        // Armazena a posição inicial para resetar entre linhas
-        int initialRow = kitchenSecret.currentRow;
-        int initialCol = kitchenSecret.currentCol;
 
         try{
             // Itera sobre a lista externa (que contém todas as linhas)
             if (input != null) {
-                int numeroLinha = 1;
                 for (List<String> line : input) {
-                    //System.out.println("--- Processando Linha " + numeroLinha + " ---");
 
                     // Agora, 'sequencia' contém SOMENTE as instruções daquela linha
                     for (String direction : line) {
@@ -184,12 +177,11 @@ public class TheKitchenSecret {
                     // Concatena o resultado da linha atual
                     kitchenSecret.result += kitchenSecret.getCurrentPositionChar();
 
-                    //System.out.println("Resultado da linha " + numeroLinha + ": " + kitchenSecret.getCurrentPositionChar());
+                    //System.out.println("Resultado da linha: " + kitchenSecret.getCurrentPositionChar());
                     //System.out.println("-------------------------------------------------------------------");
                     printKeypadWithPause(400);
                     // Reset para a posição inicial
                     kitchenSecret.resetPosition();
-                    numeroLinha++;
                 }
 
                 // 3. Adiciona o caractere A ao final do resultado
@@ -216,8 +208,6 @@ public class TheKitchenSecret {
 
         // ----------------------------------------------------------------
         // Variáveis auxiliares para a borda
-        // Largura de uma célula: Caractere + 1 espaço + 2 espaços para as bordas
-        final int CELL_CONTENT_WIDTH = 3;
         // Largura total da borda superior/inferior (4 colunas * 3 caracteres + 1 '|' final)
         final String HORIZONTAL_BORDER = "+" + "---".repeat(keypad[0].length) + "---+ ";
         // ----------------------------------------------------------------
