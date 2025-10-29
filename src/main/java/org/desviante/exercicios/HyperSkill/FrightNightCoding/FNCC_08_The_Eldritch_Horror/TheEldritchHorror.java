@@ -6,13 +6,9 @@ import java.util.*;
 /**
  * Versão otimizada do TheEldritchHorror
  * 
- * Otimizações implementadas:
- * 1. Elimina duplicação: cria assinaturas apenas uma vez
- * 2. Remove ordenação desnecessária: usa Map diretamente para contar frequências
- * 3. Reduz uso de memória: usa apenas 2 Maps em vez de múltiplas estruturas
- * 4. Complexidade: O(n × k log k) em vez de O(n × k log k + n log n)
+ * Complexidade: O(n × k log k)
  * 
- * @author Otimização baseada na análise de eficiência
+ * @author Lucas de Godoy Chicarelli
  */
 public class TheEldritchHorror {
 
