@@ -8,12 +8,10 @@ import java.util.List;
 
 public class ReadMap {
 
-    private final String path;
     private final char[][] mapa;
     private final EndPoints endPoints;
 
     public ReadMap(String path) {
-        this.path = path;
         this.mapa = readFile(path);
         this.endPoints = findEndpoints(this.mapa);
     }
