@@ -1,0 +1,3 @@
+# X53: fizzArray
+
+Dado um número `n`, crie e retorne um novo `int array` de comprimento `n`, contendo os números `0, 1, 2, ..., n-1`. O valor fornecido `n` pode ser 0, caso em que basta retornar um array de comprimento 0. Você não precisa de uma instrução `if` separada para o caso de comprimento 0; o `for loop` naturalmente executará 0 vezes nesse caso, então funciona sem problemas. A sintaxe para criar um novo `int array` é `new int[desired_length]`.
