@@ -4,7 +4,10 @@ public class FizzArray {
 
     public int[] fizzArray(int n)
     {
-        return new int[0];
+        int[] newArray = new int[n];
+        for (int i=0; i<n; i++){
+            newArray[i]=i;
+        }
+        return newArray;
     }
-
 }
