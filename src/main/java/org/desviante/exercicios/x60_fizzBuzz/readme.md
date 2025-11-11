@@ -1,0 +1,3 @@
+# x60: FizzBuzz
+
+Considere a sequência de números começando em 1 `start` e indo até 5, mas não incluindo `end`. Por exemplo, se start=1 e end=5, a sequência será 1, 2, 3, 4. Retorne um novo `String[]array` contendo a forma de `string` desses números, exceto que, para múltiplos de 3, use "Fizz" em vez do número; para múltiplos de 5, use "Buzz"; e para múltiplos de 3 e 5, use "FizzBuzz". Em Java, o método `String.valueOf(xxx)` converterá a `String` de um tipo `int` ou outro tipo.
