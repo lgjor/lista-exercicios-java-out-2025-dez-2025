@@ -1,0 +1,1 @@
+Dado um array de int `s`, retorne verdadeiro `true` se o array contém dois 7s adjacentes ou se há dois 7s separados por um elemento, como em {7, 1, 7}. Caso contrário, retorne `false`.
