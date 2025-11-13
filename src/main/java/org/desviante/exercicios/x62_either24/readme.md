@@ -1,0 +1,1 @@
+Dado um array de int `s`, retorne verdadeiro `true` se o array contém um 2 adjacente a outro 2 ou um 4 adjacente a outro 4, mas não ambos. Caso contrário, retorne `false`.
