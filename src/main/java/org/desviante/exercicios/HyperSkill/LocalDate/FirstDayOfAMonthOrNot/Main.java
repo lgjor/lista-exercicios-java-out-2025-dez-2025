@@ -1,13 +1,12 @@
-package org.desviante.exercicios.HyperSkill.LocalDate.TheLastDayOfAMonth;
+package org.desviante.exercicios.HyperSkill.LocalDate.FirstDayOfAMonthOrNot;
 
-import java.time.LocalDate;
-import java.util.Scanner;
-import java.util.InputMismatchException;
 import java.time.DateTimeException;
+import java.time.LocalDate;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-class TheLastDayOfAMonth {
+public class Main {
     public static void main(String[] args) {
-        // put your code here
         Scanner scanner = new Scanner(System.in);
         int year = 0;
         int day = 0;
@@ -28,13 +27,10 @@ class TheLastDayOfAMonth {
             }
         }
         scanner.close();
-
         int month = date.getMonthValue();
-        int dayOfMonth = date.getDayOfMonth(); // 25
+        int dayOfMonth = date.getDayOfMonth();
         int lenOfMonth = date.lengthOfMonth();
-        System.out.println(dayOfMonth == lenOfMonth);
-
-        System.out.println(LocalDate.of(2018, 1, 1).plusDays(1));
-
+        // verificar se é o último dia seria dayOfMonth==date.lengthOfMonth()
+        System.out.println(dayOfMonth == 1);
     }
 }
