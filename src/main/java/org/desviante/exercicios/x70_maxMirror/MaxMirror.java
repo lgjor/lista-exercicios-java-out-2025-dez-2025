@@ -11,7 +11,6 @@ public class MaxMirror {
         // Loop 1 (i): Itera sobre todos os possíveis índices de início
         // do subarray "original" (da esquerda para a direita).
         for (int i = 0; i < N; i++) {
-        for (int i = 0; i < N; i++) {
 
             // Loop 2 (j): Itera sobre todos os possíveis índices de início
             // do subarray "reverso". Na verdade, j representa o índice do
