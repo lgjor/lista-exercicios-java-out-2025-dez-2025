@@ -4,39 +4,68 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
 public class SecretEntrance {
 
     private static final int MODULO = 100;
     static final int startPosition = 50;
     static long actualCounter = startPosition;
+
+    // Contagem de vezes que o dial aponta para zero (após rotação - Parte 1)
     private static long vezesTerminouEmZero = 0;
 
+    // Contagem de vezes que o dial aponta para zero (qualquer clique - Parte 2)
+    private static long vezesQueApontouParaZeroP2 = 0; // Nome alterado para evitar confusão
+
     /**
-     * Processa uma única instrução de rotação (L ou R).
-     * O foco é apenas calcular a nova posição final, pois o problema
-     * exige a contagem do '0' APENAS se ele for o resultado final da rotação.
-     * * @param side 'L' para Esquerda (Subtração) ou 'R' para Direita (Adição)
-     * @param rotations O número de 'clicks' para girar o dial
+     * Processa uma única instrução de rotação (L ou R),
+     * calculando a nova posição e as duas contagens.
      */
     public static void processInstructions(char side, long rotations) {
         if (rotations == 0) return;
 
-        if (side == 'R') { // Rotação para a DIREITA (Incremento)
+        long oldCounter = actualCounter;
+        long clicksParaPrimeiroZero;
 
-            // Simplesmente soma e aplica o módulo 100
-            actualCounter = (actualCounter + rotations) % MODULO;
+        // --- 1. Determina a distância até o primeiro acerto em 0 ---
+        if (side == 'R') {
+            // Se Posição Inicial = 52, o primeiro 0 é em 48 cliques (100 - 52).
+            clicksParaPrimeiroZero = MODULO - oldCounter;
+        } else { // side == 'L'
+            // Se Posição Inicial = 50, o primeiro 0 é em 50 cliques.
+            clicksParaPrimeiroZero = oldCounter;
+        }
 
-        } else if (side == 'L') { // Rotação para a ESQUERDA (Decremento)
+        // Nota: Se oldCounter é 0, L: 0 cliques, R: 100 cliques.
+        // No contexto do problema (0-99), o primeiro acerto deve ser:
+        if (oldCounter == 0) {
+            clicksParaPrimeiroZero = MODULO; // Se começa em 0, o 0 será atingido em 100 cliques.
+        }
 
-            long valorFuturo = actualCounter - rotations;
-
-            // Calcula o novo valor, garantindo que seja positivo (0 a 99)
+        // --- 2. Calcula a nova posição ---
+        if (side == 'R') {
+            actualCounter = (oldCounter + rotations) % MODULO;
+        } else { // side == 'L'
+            long valorFuturo = oldCounter - rotations;
             actualCounter = (valorFuturo % MODULO + MODULO) % MODULO;
         }
 
-        // Verifica o dial parou na posição zero
-        if (actualCounter == 0) {
+        // --- 3. Calcula os Acertos Totais (Parte 2) ---
+        long totalAcertosNaRotacao = 0;
+
+        if (rotations >= clicksParaPrimeiroZero) {
+            // O primeiro 0 foi atingido (conta 1 acerto)
+            totalAcertosNaRotacao += 1;
+
+            // Calcula os acertos adicionais (ciclos completos de 100 cliques).
+            long rotacoesRestantes = rotations - clicksParaPrimeiroZero;
+            totalAcertosNaRotacao += rotacoesRestantes / MODULO;
+        }
+
+        vezesQueApontouParaZeroP2 += totalAcertosNaRotacao;
+
+        // --- 4. Contagem da Parte 1 (Terminou em 0) ---
+        // Se a posição final for 0 E houve pelo menos 1 acerto (movimento)
+        if (actualCounter == 0 && totalAcertosNaRotacao > 0) {
             vezesTerminouEmZero++;
         }
     }
@@ -55,8 +84,10 @@ public class SecretEntrance {
                 }
             }
 
+            System.out.println("--- Resultados ---");
             System.out.println("Posição final do contador: " + actualCounter);
-            System.out.println("Total de vezes que o dial terminou em Zero: " + vezesTerminouEmZero);
+            System.out.println("Total de vezes que o dial terminou em Zero (Parte 1): " + vezesTerminouEmZero);
+            System.out.println("Total de vezes que o dial apontou para Zero (Parte 2): " + vezesQueApontouParaZeroP2);
         }
         catch (FileNotFoundException e) {
             System.err.println("Arquivo não encontrado no caminho especificado: " + filePath);
