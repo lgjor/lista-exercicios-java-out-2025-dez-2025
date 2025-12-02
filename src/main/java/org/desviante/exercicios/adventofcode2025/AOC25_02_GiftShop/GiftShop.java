@@ -89,6 +89,47 @@ public class GiftShop {
         return firstHalf.equals(secondHalf);
     }
 
+    /**
+     * Verifica se o ID é composto INTEIRAMENTE pela repetição de sua menor subsequência.
+     * @param id O ID a ser verificado.
+     * @return true se o ID for uma sequência repetida, false caso contrário.
+     */
+    public static boolean hasRepeatedSequence(long id) {
+        String idStr = String.valueOf(id);
+        int length = idStr.length();
+
+        if (length < 2) {
+            return false;
+        }
+
+        // Tenta todos os possíveis tamanhos de subsequência (períodos) de 1 até a metade
+        for (int periodo = 1; periodo <= length / 2; periodo++) {
+
+            // Critério 1: O comprimento total deve ser um múltiplo do período (repetição exata)
+            if (length % periodo == 0) {
+
+                String sequencia = idStr.substring(0, periodo);
+                boolean isRepeated = true;
+
+                // Critério 2: Verifica se TODAS as subsequências são IGUAIS à primeira
+                for (int i = periodo; i < length; i += periodo) {
+                    String proximaSequencia = idStr.substring(i, Math.min(i + periodo, length)); // Math.min() para segurança
+
+                    if (!sequencia.equals(proximaSequencia)) {
+                        isRepeated = false;
+                        break;
+                    }
+                }
+
+                if (isRepeated) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         // Altere este caminho para o caminho real do seu arquivo
         String filePath = "src/main/java/org/desviante/exercicios/adventofcode2025/AOC25_02_GiftShop/input.txt";
@@ -99,22 +140,48 @@ public class GiftShop {
         try {
             ranges = readIdRangesFromFile(filePath);
 
-            System.out.println("\nIntervalos de IDs lidos:");
+            //System.out.println("\nIntervalos de IDs lidos:");
             for (IDRange range : ranges) {
                 System.out.println(range);
-                System.out.println("Tamanho do intervalo: " + range.getSize());
+                //System.out.println("Tamanho do intervalo: " + range.getSize());
 
-                System.out.println("IDs com sequência repetida encontrados no intervalo: ");
+                System.out.print("IDs com sequência repetida encontrados no intervalo: ");
                 for (long i = range.startId; i <= range.endId; i++){
                     if (isRepeatedSequence(i)) {
-                        System.out.println(i);
+                        System.out.print(i+" ");
                         somaDosIdsInvalidos+=i;
                     }
                 }
+                System.out.println();
             }
-            System.out.println("----------------- Resultado --------------------");
+            System.out.println("----------------- Resultado da parte 1 --------------------");
             System.out.println( "Soma dos Id's inválidos: "+ somaDosIdsInvalidos );
-            System.out.println("------------------------------------------------");
+            System.out.println("-----------------------------------------------------------");
+
+            // Reinicia a soma para realizar a parte 2
+            somaDosIdsInvalidos=0;
+
+            for (IDRange range : ranges) {
+                System.out.println("\nIntervalo: " + range);
+
+                System.out.println("IDs Inválidos (Sequência Repetida ≥ 2x) no Intervalo:");
+
+                for (long i = range.startId; i <= range.endId; i++){
+
+                    // Verifica se o ID é INVÁLIDO usando o critério mais abrangente
+                    if (hasRepeatedSequence(i)) {
+                        System.out.println("  -> ID Inválido encontrado: " + i);
+                        // Soma o ID à variável de resultado
+                        somaDosIdsInvalidos += i;
+                    }
+                }
+            }
+
+            // Resultado Final
+            System.out.println("\n===========================================================");
+            System.out.println("🚀 Soma Total dos Id's inválidos (Critério Final): " + somaDosIdsInvalidos);
+            System.out.println("===========================================================");
+
         } catch (IOException e) {
             System.err.println("Erro ao ler o arquivo: " + e.getMessage());
             e.printStackTrace();
