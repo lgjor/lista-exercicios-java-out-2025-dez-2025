@@ -3,6 +3,7 @@ package org.desviante.exercicios.adventofcode2025.AOC25_04_PrintingDepartment;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PrintingDepartment {
@@ -29,7 +30,7 @@ public class PrintingDepartment {
         }
     }
 
-    // TODO
+    // PART ONE
     public long contarRolosValidos(){
         long count = 0;
 
@@ -77,6 +78,54 @@ public class PrintingDepartment {
         return count;
     }
 
+    // PART TWO
+    // Remover rolos válidos da matriz, transformando-os em .
+    public long removerRolosValidos() {
+        long count = 0;
+
+        // Criar uma lista de posições que devem ser removidas
+        List<int[]> paraRemover = new ArrayList<>();
+
+        // PRIMEIRO: identificar
+        for (int row = 0; row < rollsOfPapers.length; row++) {
+            for (int col = 0; col < rollsOfPapers[row].length; col++) {
+
+                if (rollsOfPapers[row][col] != '@') continue;
+
+                int vizinhos = 0;
+
+                for (int dr = -1; dr <= 1; dr++) {
+                    for (int dc = -1; dc <= 1; dc++) {
+
+                        if (dr == 0 && dc == 0) continue;
+
+                        int vr = row + dr;
+                        int vc = col + dc;
+
+                        if (vr >= 0 && vr < rollsOfPapers.length &&
+                                vc >= 0 && vc < rollsOfPapers[vr].length &&
+                                rollsOfPapers[vr][vc] == '@') {
+
+                            vizinhos++;
+                        }
+                    }
+                }
+
+                if (vizinhos < 4) {
+                    paraRemover.add(new int[]{row, col});
+                    count++;
+                }
+            }
+        }
+
+        // SEGUNDO: remover todos de uma vez
+        for (int[] pos : paraRemover) {
+            rollsOfPapers[pos[0]][pos[1]] = '.';
+        }
+
+        return count;
+    }
+
     public static void main(String[] args) throws IOException {
         final String filePath = "src/main/java/org/desviante/exercicios/adventofcode2025/AOC25_04_PrintingDepartment/input.txt";
 
@@ -87,7 +136,19 @@ public class PrintingDepartment {
         System.out.println("---------------");
         pd.printMatrix();
         System.out.println("===============");
-        System.out.println("Existem "+pd.contarRolosValidos()+" rolos válidos de papel.");
+        long rolosValidos = 0;
+        long rolosRemovidos = 0;
+        do{
+            rolosValidos = pd.removerRolosValidos();
+            rolosRemovidos += rolosValidos;
+            System.out.println("Existem "+ rolosValidos +" rolos válidos de papel.");
+        } while (rolosValidos >0);
+        System.out.println("===============");
+        System.out.println("Rolos restantes: ");
+        System.out.println("---------------");
+        pd.printMatrix();
+        System.out.println("===============");
+        System.out.println("Total de rolos removidos: "+rolosRemovidos);
 
     }
 }
