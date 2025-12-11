@@ -1,7 +1,7 @@
-# Exercício X101: sameEnds
+# Exercício X101: pre4
 
 ## Descrição
 
-Escreva uma função em Java que implemente a seguinte lógica: Retorne uma versão do array fornecido onde cada valor zero no array é substituído pelo maior valor ímpar à direita do zero. Se não houver nenhum valor ímpar à direita do zero, deixe o zero como zero. Dica: para resolver este problema, você pode usar uma segunda função auxiliar, por exemplo, para encontrar o maior valor ímpar à direita de uma posição especificada.
+Dado um array não vazio do tipo int, retorne um novo array contendo os elementos do array original que vieram antes do primeiro 4 no array original. O array original conterá pelo menos um 4. Observe que é válido em Java criar um array de comprimento 0.
 
 ## Solução
